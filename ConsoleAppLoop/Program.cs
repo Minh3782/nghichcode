@@ -26,7 +26,15 @@ for (int i = 0; i < length; i++)
 {
     for (int j = 0; j < width; j++)
     {
-        Console.Write(".");
+            if((i%(length-1))==0 || (j % (width - 1)) == 0)
+            {
+                Console.Write(symbol);
+            }
+            else
+            {
+                Console.Write(" ");
+            }
     }
-    Console.WriteLine(symbol);
+            Console.WriteLine();
 }
+
